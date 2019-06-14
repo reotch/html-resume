@@ -1,0 +1,222 @@
+/* Override browser defaults */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    width: 65%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+/* Navbar: currently set to not display */
+.navbar {
+    display: none;
+    background-color: darkslategray;
+}
+
+/* Override default UL and set list behavior/styles */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#dev-projects {
+    color: red;
+}
+
+.header-info {
+    grid-column: 1 / 4;
+    font-family: 'Prata', serif;
+}
+
+h1 {
+    grid-column: 1 / 4;
+    margin: 5px 0px;
+    padding: 0;
+    /* height: 100; */
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 4px 3px 2px rgb(233, 224, 224);
+}
+
+h2 {
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 8px 0;
+    letter-spacing: 2px;
+    border-left: 6px solid rgb(78, 42, 132);
+    background: lightgray;
+    /* box-shadow: 1px 1px 40px; */
+}
+
+h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.contact {
+    grid-column: 1 / 4;
+    text-align: center;
+}   
+
+.contact ul li {
+    display: inline;
+    margin: 0px 12px;
+    font-size: small;
+}
+
+#job-title {
+    grid-column: 1 / 4;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 6px;
+    background: none;
+    border: none; 
+}
+
+.job-date {
+    float: right;
+}
+
+.section {
+    grid-column: 1 / 4;
+}
+
+.section ul {
+    margin: 0 0 0 0.5in;
+}
+
+/* Split column sections */
+.split {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3px;
+}
+
+.left {
+    grid-column: 1 / 2;
+    text-align: right;
+    font-weight: bold;
+    /* padding: 5px; */
+    list-style-type: none;
+}
+
+.right {
+    grid-column: 2 / 4;
+    /* padding: 5px; */
+    list-style-type: none;
+}
+
+footer {
+    grid-column: 1 / 4;
+    position: sticky;
+    bottom: 0px;
+    height: 50px;
+    background: rgb(137, 130, 148);
+    color: white;
+    padding: 0 20px;
+    border-left: 6px solid rgb(78, 42, 132);
+    border-right: 6px solid rgb(78, 42, 132);
+}
+
+button {
+    margin: 0 40px;
+    padding: 5px;
+    border-radius: 4px 4px;
+    border: none;
+    box-shadow: 3px 3px 5px #444;
+}
+
+/* ---------- Print instructions ---------- */
+@media print {
+    @page {
+        size: auto;
+        margin: 0 0.5in 0 0.5in;
+    }
+
+    * {
+        float: none !important;
+    }
+
+    .grid-container {
+        width: 100%;
+        font-family: 'Prata', serif;
+    }
+
+    h1 {
+        margin: 0;
+        padding-top: 1em;
+        padding-bottom: 0;
+        letter-spacing: 3px;
+        text-shadow: none;
+    }
+
+    .contact ul li{
+        font-size: small;
+    }
+
+    p {
+        font-size: small;
+    }
+    
+    li {
+        font-size: small;
+    }
+
+    h2 {
+        border: none;
+        font-size: small;
+    }
+
+    #job-title {
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+        padding: 0;
+    }
+
+    #qualification-summary {
+        margin: 0;
+        padding: 0;
+    }
+
+    #experience {
+        padding-top: 1em;
+        break-before: always;
+        page-break-before: always;
+        page-break-inside: avoid;
+    }
+
+    #education {
+        padding-top: 1em;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        font-size: small;
+    }
+
+    .llc {
+        text-transform: uppercase;
+    }
+
+    footer {
+        display: none;
+    }
+}
