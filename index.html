@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Richard Sandrok  &ndash; Full-stack Software Developer</title>
 	<link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.css">
 	<!-- <link rel = "stylesheet" type = "text/css" media = "print" href = "./css/print.css"> -->
 
@@ -13,7 +14,7 @@
 
 <body>
 	<div class="grid-container">
-<!-- ----- Navbar ----- -->
+<!-- ----- Navbar for Mobile ----- -->
 		<div class="navbar">
 			<ul>
 				<li><a href="#qualification-summary">Qualification Summary</a></li>
@@ -28,55 +29,71 @@
 			<h1 id="name">Richard Sandrok</h1>
 				<div class="contact">
 					<ul>
-						<li><a href="mailto:richard@sandrok.com?Subject=Website%20Contact">richard@sandrok.com</a></li>
-						<li><a href="tel:+18478682028">(847) 868-2028</a></li>
-						<li><span>Evanston, IL</span></li>
+						<li class="col1"><a href="mailto:richard@sandrok.com?Subject=Website%20Contact">richard@sandrok.com</a></li>
+						<li class="col2"><a href="tel:+18478682028">(847) 868-2028</a></li>
+						<li class="col3"><span>Evanston, IL</span></li>
 					</ul>
 				</div>
 			<h2 id="job-title">software developer</h2>
-		</div>
+		</div> <!-- end header & contact info -->
 <!-- ----- Qualification Summary Section ----- -->
 		<div class="section" id="qualification-summary">
 			<h2 class="job-head">qualification summary</h2>
 			<p class="job-desc">Full-stack developer and experienced digital content creator with marketing and team management experience. I have experience working with organizations of various sizes, from being the third person at a start-up to mid-size global companies. I have worked in many locations throughout the world for varied clientele.</p>
 			<h3 class="job-sub">technical skills</h3>
 			<div class="split">
-				<ul class="left">
-					<li>Programming Languages</li>
-					<li>Web Technologies/Frameworks</li>
-					<li>Databases</li>
-					<li>Tools/Methodologies</li>
-					<li>Source Control</li>
-				</ul>
-				<ul class="right">
-					<li>Python, JavaScript, HTML5, CSS3</li>
-					<li>RestAPI, Web Form APIs, Angular, SQL, Flask, Bootstrap UI, NumPy, Pandas, jQuery</li>
-					<li>SQL, MySQL, PostgreSQL, SQLite</li>
-					<li>Git, Anaconda, Jupyter Notebook, Data Model, SQL Server Management Studios, Google Developer tools, Agile Development, Microsoft Word, Excel and PowerPoint, WordPress, SAP, Adobe Suite (Photoshop, Lightroom, Premiere) Camtasia, Reaper, Audacity, Davinci Resolve</li>
-					<li>GitHub, Git, Windows, OS X, Linux, iOS, Android</li>
-				</ul>
+				<p class="left">Programming Languages</p>
+				<p class="right">Python, JavaScript, HTML5, CSS3</p>
+				<p class="left">Web Technologies/Frameworks</p>
+				<p class="right">RestAPI, Web Form APIs, Angular, SQL, Flask, Bootstrap UI, NumPy, Pandas, jQuery</p>
+				<p class="left">Databases</p>
+				<p class="right">SQL, MySQL, PostgreSQL, SQLite</p>
+				<p class="left">Tools/Methodologies</p>
+				<p class="right">Git, Anaconda, Jupyter Notebook, Data Model, SQL Server Management Studios, Google Developer tools, Agile Development, Microsoft Word, Excel and PowerPoint, WordPress, SAP, Adobe Suite (Photoshop, Lightroom, Premiere) Camtasia, Reaper, Audacity, Davinci Resolve</p>
+				<p class="left">Source Control</p>
+				<p class="right">GitHub, Git, Windows, OS X, Linux, iOS, Android</p>
 			</div>
-		</div>
+		</div> <!-- end qualification summary section -->
 <!-- ----- Development Projects Section ----- -->
 		<div class="section" id="dev-projects">
 			<h3>development projects</h3>
-				<div class="split">
-					<ul class="left">
-						<li>PROJECT NAME:</li>
-						<li>DESCRIPTION:</li>
-						<li>ENVIRONMENT:</li>
-					</ul>
-					<ul class="right">
-						<li>[name]</li>
-						<li>[desc]</li>
-						<li>[lang]</li>
-					</ul>
-				</div>
-		</div>
+			<div class="split project">
+				<p class="left">project name</p>
+				<p class="right">Carzone</p>
+				<p class="left">description</p>
+				<p class="right">Full-stack project for selecting vehicles and leaving ratings and reviews; as part of the back-end team I worked to create a web-based API for CRUD operation.</p>
+				<p class="left">environment</p>
+				<p class="right">Python Flask, Angular</p>
+			</div>
+			<div class="split project">
+				<p class="left">project name</p>
+				<p class="right">Sensaphonics</p>
+				<p class="left">description</p>
+				<p class="right">Full-stack project for ordering custom in-ear monitors for professional musicians</p>
+				<p class="left">environment</p>
+				<p class="right">Python Flask (HTML5, CSS3), PostgreSQL</p>
+			</div>
+			<div class="split project">
+				<p class="left">project name</p>
+				<p class="right">Mountains, Trees, Chainsaws</p>
+				<p class="left">description</p>
+				<p class="right">A rock, paper, scissors of epic proportions</p>
+				<p class="left">environment</p>
+				<p class="right">HTML5, CSS3, JavaScript</p>
+			</div>
+			<div class="split project">
+				<p class="left">project name</p>
+				<p class="right">Weather App</p>
+				<p class="left">description</p>
+				<p class="right">A simple weather application with search functionality connected to Open Weather Map via REST API</p>
+				<p class="left">environment</p>
+				<p class="right">JavaScript, HTML5, Bootstrap 4</p>
+			</div>
+		</div><!-- end development projects section -->
 <!-- ----- Work Experience section ----- -->
 		<div class="section" id="experience">
 			<h2>work experience</h2>
-				<h3 class="job-title">software developer, coding temple<span class="job-date">2019&ndash;Present</span></h3>
+				<h3 class="job-title">software developer, coding temple <span class="job-date">2019&ndash;Present</span></h3>
 				<p class="job-desc">Part of team involved in developing, designing and testing interactive and responsive websites for clients using the front-end and back-end applications.</p>
 				<ul class="job-list">
 					<li>Developed new feature requests, fixed bugs, and performed trouble shooting</li>
@@ -86,14 +103,14 @@
 					<li style="color: red; display: none;">In your own words. Write a few more bullet points of what did you do.</li>
 				</ul>
 
-				<h3 class="job-title">owner & president, unlimited reotch, inc.<span class="job-date">2016&ndash;Present</span></h3>
+				<h3 class="job-title">owner & president, unlimited reotch, inc. <span class="job-date">2016&ndash;Present</span></h3>
 				<ul class="job-list">
 					<li>Digital content producer for B2B clients and various Unlimited Reotch productions</li>
 					<li>Developed, recorded, produced, edited, and published podcasts (e.g., Dork Therapy)</li>
 					<li>Independent sales representative for Sensaphonics in-ear monitors and hearing conservation technologies</li>
 				</ul>
 
-				<h3 class="job-title">production manager & business development contractor, sonata learning, inc.<span class="job-date">2016&ndash;2017</span></h3>
+				<h3 class="job-title">production manager & business development contractor, sonata learning, inc. <span class="job-date">2016&ndash;2017</span></h3>
 				<ul class="job-list">
 					<li>Shot and edited videos for Shirley Ryan AbilityLab, Aurora Doors,and World Bank e-learning initiatives</li>
 					<li>Developed SCORM-compliant e-learning module content for 10 clients</li>
@@ -103,7 +120,7 @@
 					<li>Sourced, auditioned, and managed outside voice-over talent</li>
 				</ul>
 
-				<h3 class="job-title">technical editor & online training contractor, kaufman hall<span class="job-date">2014&ndash;2016</span></h3>
+				<h3 class="job-title">technical editor & online training contractor, kaufman hall <span class="job-date">2014&ndash;2016</span></h3>
 				<ul class="job-list">
 					<li>Advised and shot 5 “talking heads” videos for a new initiative of an SVP of Marketing</li>
 					<li>Produced livestreamed presentations for 2 years for the company’s marquee event, Healthcare Leadership Conference</li>
@@ -112,28 +129,28 @@
 					<li>Trained over 20 consultants in best practices for online training presentations</li>
 				</ul>
 
-				<h3 class="job-title">artist relations, shure, inc.<span class="job-date">2002&ndash;2013</span></h3>
+				<h3 class="job-title" id="shure">artist relations, shure, inc. <span class="job-date">2002&ndash;2013</span></h3>
 				<ul class="job-list">
-					<li>Conducted and/or filmed over 33 interviews and special interest videos for social media and internal use</li>
-					<li>Produced annual artist promotion reel (50-60 minutes) highlighting the artist roster to trade show attendees</li>
+					<li class="no-print">Conducted and/or filmed over 33 interviews and special interest videos for social media and internal use</li>
+					<li class="no-print">Produced annual artist promotion reel (50-60 minutes) highlighting the artist roster to trade show attendees</li>
 					<li>Managed budget and sales for 50-60 artist endorsers</li>
-					<li>Published author in 10 Shure magazines</li>
-					<li>Talent buyer for trade show (NAMM) events, finding and negotiating with talent and/or co-sponsors for dealer parties for 500-3000 attendees</li>
-					<li>On-sitesupport for live and televised events &ndash; Grammys, Latin Grammys, SXSW, Lollapalooza, Austin City Limits, Shure’s Give It Voice competition</li>
+					<li class="no-print">Published author in 10 Shure magazines</li>
+					<li class="no-print">Talent buyer for trade show (NAMM) events, finding and negotiating with talent and/or co-sponsors for dealer parties for 500-3000 attendees</li>
+					<li class="no-print">On-sitesupport for live and televised events &ndash; Grammys, Latin Grammys, SXSW, Lollapalooza, Austin City Limits, Shure’s Give It Voice competition</li>
 				</ul>
 
-				<h3 class="job-title">venue security manager, victoria operating company, <span class="llc">llc</span><span class="job-date">1998&ndash;2008</span></h3>
+				<h3 class="job-title" id="vic">venue security manager, victoria operating company, <span class="llc">llc</span> <span class="job-date">1998&ndash;2008</span></h3>
 				<ul class="job-list">
 					<li>Managed 10-18 direct reports</li>
-					<li>Progressed to managerposition after starting as stagehand</li>
+					<li class="no-print">Progressed to manager position after starting as stagehand</li>
 				</ul>
-		</div>
+		</div> <!-- end work experience section -->
 <!-- ----- Education Section ----- -->
 		<div class="section" id="education">
 			<h2>education</h2>
 			<p>Elmhurst College<br />
 			Bachelor of Science, Music Business</p>
-		</div>
+		</div> <!-- end eductation section -->
 <!-- ----- Interests & Community Section ----- -->
 		<div class="section" id="interests">
 			<h2>interests & community</h2>
@@ -143,7 +160,7 @@
 				<li>Computers, Science & Technology &ndash; restoring old, antiquated computers to working, functioning machines; building PCs; rooting mobile devices; hydroponic & aquaponic systems</li>
 				<li>Conservation & Ecology &ndash; Shedd Aquarium volunteer since 2009</li>
 			</ul>
-		</div>
+		</div> <!-- end interests and community section -->
 		<footer>
 				<p>&copy; 2019 Richard Sandrok<span class="job-date"><button onclick="printFunc()">Print this page</button><a href="mailto:richard@sandrok.com?Subject=Website%20Contact">Email Me</a></span></p>
 		</footer>
