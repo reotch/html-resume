@@ -195,8 +195,15 @@ button {
         font-weight: bold;
     }
 
+    h3 {
+        display: flex;
+        
+    }
+
     .job-date {
-        float: right !important;
+        flex: 1;
+        text-align: right;
+        white-space: nowrap;
     }
 
     #job-title {
@@ -227,15 +234,120 @@ button {
         font-weight: bold;
     }
 
-    .llc {
-        text-transform: uppercase;
-    }
-
     footer {
         display: none;
     }
 
     .no-print {
+        display: none;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    .grid-container {
+        width: 99%;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin: 3px;
+        padding: 0px;
+    }
+
+    h2 {
+        font-size: .9em;
+    }
+
+    h3 {
+        display: flex;
+        font-size: .85em;
+        letter-spacing: 2px;
+        padding: .3em;
+        background-color: lightgray;
+        border-right: 6px solid rgb(78, 42, 132);
+    }
+
+    #experience {
+        margin-top: 0px;
+    }
+
+    #dev-projects {
+        margin-bottom: 0px;
+    }
+
+    #dev-projects h2 {
+        margin-top: 0px;
+    }
+
+    a {
+        color: rgb(78, 42, 132);
+    }
+
+    .contact ul li{
+        display: block;
+    }
+
+    #job-title {
+        font-size: .66em;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .split {
+        display: block;
+    }
+
+    .left {
+        margin: 4px 0px 2px 0px;
+        padding: 0;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .right {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .project {
+        margin: 0px;
+        padding: .25em 0px .3em 0px;
+    }
+    .project:nth-child(odd) {
+        background-color: rgba(233, 233, 233, 0.666);
+    }
+
+    .job-title {
+        background-color: #ffffff;
+        border: none;
+    }
+
+    .job-date {
+        flex: 1;
+        padding-left: 1px;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    footer {
         display: none;
     }
 }
