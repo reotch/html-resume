@@ -292,7 +292,7 @@ button {
         display: block;
     }
 
-    #job-title {
+    .job-title {
         font-size: .66em;
     }
 
@@ -333,7 +333,7 @@ button {
 
     .job-date {
         flex: 1;
-        padding-left: 1px;
+        padding-left: 3px;
         text-align: right;
         white-space: nowrap;
     }
