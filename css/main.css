@@ -272,7 +272,7 @@ button {
         border-right: 6px solid rgb(78, 42, 132);
     }
 
-    #experience {
+ /*   #experience {
         margin-top: 0px;
     }
 
@@ -282,7 +282,7 @@ button {
 
     #dev-projects h2 {
         margin-top: 0px;
-    }
+    } */
 
     a {
         color: rgb(78, 42, 132);
@@ -291,9 +291,18 @@ button {
     .contact ul li{
         display: block;
     }
-
+    
     .job-title {
+        background-color: #ffffff;
+        border: none;
         font-size: .66em;
+    }
+    
+    .job-date {
+        flex: 1;
+        padding-left: 3px;
+        text-align: right;
+        white-space: nowrap;
     }
 
     p {
@@ -322,20 +331,9 @@ button {
         margin: 0px;
         padding: .25em 0px .3em 0px;
     }
+    
     .project:nth-child(odd) {
         background-color: rgba(233, 233, 233, 0.666);
-    }
-
-    .job-title {
-        background-color: #ffffff;
-        border: none;
-    }
-
-    .job-date {
-        flex: 1;
-        padding-left: 3px;
-        text-align: right;
-        white-space: nowrap;
     }
 
     ul {
