@@ -272,7 +272,8 @@ button {
         border-right: 6px solid rgb(78, 42, 132);
     }
 
- /*   #experience {
+ /*   
+    #experience {
         margin-top: 0px;
     }
 
@@ -282,7 +283,8 @@ button {
 
     #dev-projects h2 {
         margin-top: 0px;
-    } */
+    } 
+*/
 
     a {
         color: rgb(78, 42, 132);
@@ -301,6 +303,7 @@ button {
     .job-date {
         flex: 1;
         padding-left: 3px;
+        font-size: inherit;
         text-align: right;
         white-space: nowrap;
     }
