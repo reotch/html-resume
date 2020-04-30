@@ -33,10 +33,10 @@ a {
     color: inherit;
 }
 
-#dev-projects {
+/* #dev-projects {
     display: none;
     color: red;
-}
+} */
 
 .header-info {
     grid-column: 1 / 4;
@@ -111,17 +111,24 @@ h3 {
     grid-column-gap: 3px;
 }
 
+.project {
+    margin-bottom: 1.25em;
+}
+
 .left {
-    grid-column: 1 / 2;
+    grid-column: 1 / span 1;
     text-align: right;
     font-weight: bold;
     /* padding: 5px; */
+    margin: 0;
     list-style-type: none;
+    text-transform: capitalize;
 }
 
 .right {
-    grid-column: 2 / 4;
+    grid-column: 2 / span 2;
     /* padding: 5px; */
+    margin: 0 0 0 3em;
     list-style-type: none;
 }
 
@@ -143,6 +150,7 @@ button {
     border-radius: 4px 4px;
     border: none;
     box-shadow: 3px 3px 5px #444;
+    cursor: pointer;
 }
 
 /* ---------- Print instructions ---------- */
@@ -184,6 +192,18 @@ button {
     h2 {
         border: none;
         font-size: small;
+        font-weight: bold;
+    }
+
+    h3 {
+        display: flex;
+        
+    }
+
+    .job-date {
+        flex: 1;
+        text-align: right;
+        white-space: nowrap;
     }
 
     #job-title {
@@ -211,10 +231,121 @@ button {
     h3 {
         text-transform: capitalize;
         font-size: small;
+        font-weight: bold;
     }
 
-    .llc {
-        text-transform: uppercase;
+    footer {
+        display: none;
+    }
+
+    .no-print {
+        display: none;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    .grid-container {
+        width: 99%;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin: 3px;
+        padding-top: 3px;
+    }
+
+    h2 {
+        font-size: .9em;
+    }
+
+    h3 {
+        display: flex;
+        font-size: .85em;
+        letter-spacing: 2px;
+        padding: .3em;
+        background-color: lightgray;
+        border-right: 6px solid rgb(78, 42, 132);
+    }
+
+ /*   
+    #experience {
+        margin-top: 0px;
+    }
+
+    #dev-projects {
+        margin-bottom: 0px;
+    }
+
+    #dev-projects h2 {
+        margin-top: 0px;
+    } 
+*/
+
+    a {
+        color: rgb(78, 42, 132);
+    }
+
+    .contact ul li{
+        display: block;
+    }
+    
+    .job-title {
+        background-color: #ffffff;
+        border: none;
+        font-size: .66em;
+    }
+    
+    .job-date {
+        flex: 1;
+        padding-left: 3px;
+        font-size: inherit;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .split {
+        display: block;
+    }
+
+    .left {
+        margin: 4px 0px 2px 0px;
+        padding: 0;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .right {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .project {
+        margin: 0px;
+        padding: .25em 0px .3em 0px;
+    }
+    
+    .project:nth-child(odd) {
+        background-color: rgba(233, 233, 233, 0.666);
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        font-size: 14px;
     }
 
     footer {
