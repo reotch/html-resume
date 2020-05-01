@@ -1,0 +1,21 @@
+/* Intended to add moving elements to headers and footers  */
+
+@keyframes moveBars {
+    0% {
+        position: absolute;
+        top: inherit;
+        left: 0;
+    }
+
+    50% {
+        position: absolute;
+        top: inherit;
+        right: 0;
+    }
+
+    100% {
+        position: absolute;
+        top: inherit;
+        left: 0;
+    }
+}
