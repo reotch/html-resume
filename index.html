@@ -5,19 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Richard Sandrok  &ndash; Full-stack Software Developer</title>
-
 <!-- ----- Google Fonts ----- -->
 	<link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
+	<!-- end Google Fonts -->
 <!-- ----- CSS ----- -->
 	<link rel="stylesheet" href="./css/main.css">
 	<!-- <link rel = "stylesheet" type = "text/css" media = "print" href = "./css/print.css"> -->
-
+	<!-- <link rel="stylesheet" href="./css/minimalism.css"> -->
+	<!-- end CSS -->
 </head>
 
 <body>
 	<div class="grid-container">
+
 <!-- ----- Navbar for Mobile ----- -->
 		<div class="navbar">
 			<ul>
@@ -26,12 +27,14 @@
 				<li><a href="#experience">Experience</a></li>
 				<li><a href="#education">Education</a></li>
 				<li><a href="#interests">Interests</a></li>
+				<li><a href="#contact-info">Contact</a></li>
 			</ul>
 		</div> <!-- end .navbar -->
+
 <!-- ----- Header & Contact Info ----- -->
-		<div class="header-info">
+		<div class="header-info section">
 			<h1 id="name">Richard Sandrok</h1>
-				<div class="contact">
+				<div id="contact-info">
 					<ul>
 						<li class="col1"><a href="mailto:richard@sandrok.com?Subject=Website%20Contact">richard@sandrok.com</a></li>
 						<li class="col2"><a href="tel:+18478682028">(847) 868-2028</a></li>
@@ -40,6 +43,7 @@
 				</div>
 			<h2 id="job-title">software developer</h2>
 		</div> <!-- end header & contact info -->
+
 <!-- ----- Qualification Summary Section ----- -->
 		<div class="section" id="qualification-summary">
 			<h2 class="job-head">qualification summary</h2>
@@ -58,46 +62,48 @@
 				<p class="right">GitHub, Git, Windows, OS X, Linux, iOS, Android</p>
 			</div>
 		</div> <!-- end qualification summary section -->
+
 <!-- ----- Development Projects Section ----- -->
 		<div class="section" id="dev-projects">
 			<h3>development projects</h3>
-			<div class="split project">
+			<div class="split project card">
 				<p class="left">project name</p>
-				<p class="right">Carzone</p>
+				<h4 class="right project-name">Carzone</h4>
 				<p class="left">description</p>
 				<p class="right">Full-stack web application for selecting vehicles and leaving ratings and reviews; as part of the back-end team I worked to create a web-based API for CRUD operation.</p>
 				<p class="left">environment</p>
 				<p class="right">Python Flask, Angular</p>
 			</div>
-			<div class="split project">
+			<div class="split project card">
 				<p class="left">project name</p>
-				<p class="right">Sensaphonics</p>
+				<h4 class="right project-name">Sensaphonics</h4>
 				<p class="left">description</p>
 				<p class="right">Full-stack project for ordering custom in-ear monitors for professional musicians</p>
 				<p class="left">environment</p>
 				<p class="right">Python Flask (HTML5, CSS3), PostgreSQL</p>
 			</div>
-			<div class="split project">
+			<div class="split project card">
 				<p class="left">project name</p>
-				<p class="right">Mountains, Trees, Chainsaws</p>
+				<h4 class="right project-name"><a href="https://reotch.github.io/mountain-tree-chainsaw" target="_blank">Mountains, Trees, Chainsaws</a></h4>
 				<p class="left">description</p>
 				<p class="right">A rock, paper, scissors of epic proportions</p>
 				<p class="left">environment</p>
 				<p class="right">HTML5, CSS3, JavaScript</p>
 			</div>
-			<div class="split project">
+			<div class="split project card">
 				<p class="left">project name</p>
-				<p class="right">Weather App</p>
+				<h4 class="right project-name">Weather App</h4>
 				<p class="left">description</p>
 				<p class="right">A simple weather application with search functionality connected to Open Weather Map via REST API</p>
 				<p class="left">environment</p>
 				<p class="right">JavaScript, HTML5, Bootstrap 4</p>
 			</div>
 		</div><!-- end development projects section -->
+
 <!-- ----- Work Experience section ----- -->
 		<div class="section" id="experience">
 			<h2>work experience</h2>
-			<div id="coding-temple">
+			<div class="card" id="coding-temple">
 				<h3 class="job-title">software developer, coding temple <span class="job-date">2019&ndash;Present</span></h3>
 				<p class="job-desc">Part of team involved in developing, designing and testing interactive and responsive websites for clients using the front-end and back-end applications.</p>
 				<ul class="job-list">
@@ -109,7 +115,7 @@
 					<li>Teaching assistant and tutor for eight students for Python/Flask and CSS3</li>
 				</ul>
 			</div>
-			<div id="unlimited-reotch">
+			<div class="card" id="unlimited-reotch">
 				<h3 class="job-title">owner & president, unlimited reotch, inc. <span class="job-date">2016&ndash;Present</span></h3>
 				<ul class="job-list">
 					<li>Digital content producer for B2B clients and various Unlimited Reotch productions</li>
@@ -117,7 +123,7 @@
 					<li>Independent sales representative for Sensaphonics in-ear monitors and hearing conservation technologies</li>
 				</ul>
 			</div>
-			<div id="sonata">
+			<div class="card" id="sonata">
 				<h3 class="job-title">production manager & business development contractor, sonata learning, inc. <span class="job-date">2016&ndash;2017</span></h3>
 				<ul class="job-list">
 					<li>Shot and edited videos for Shirley Ryan AbilityLab, Aurora Doors, and World Bank e-learning initiatives</li>
@@ -128,7 +134,7 @@
 					<li>Sourced, auditioned, and managed outside voice-over talent</li>
 				</ul>
 			</div>
-			<div id="kaufman-hall">
+			<div class="card" id="kaufman-hall">
 				<h3 class="job-title">technical editor & online training contractor, kaufman hall <span class="job-date">2014&ndash;2016</span></h3>
 				<ul class="job-list">
 					<li>Advised and shot 5 “talking heads” videos for a new initiative of an SVP of Marketing</li>
@@ -138,7 +144,7 @@
 					<li>Trained over 20 consultants in best practices for online training presentations</li>
 				</ul>
 			</div>
-			<div id="shure">
+			<div class="card" id="shure">
 				<h3 class="job-title">artist relations, shure, inc. <span class="job-date">2002&ndash;2013</span></h3>
 				<ul class="job-list">
 					<li class="no-print">Conducted and/or filmed over 33 interviews and special interest videos for social media and internal use</li>
@@ -149,19 +155,22 @@
 					<li>On-site support for live and televised events &ndash; Grammys, Latin Grammys, SXSW, Lollapalooza, Austin City Limits, Shure’s Give It Voice competition</li>
 				</ul>
 			</div>
-			<div id="vic-theatre">
+			<div class="card" id="vic-theatre">
 				<h3 class="job-title" id="vic">venue security manager, victoria operating company, LLC <span class="job-date">1998&ndash;2008</span></h3>
 				<ul class="job-list">
 					<li>Managed 10-18 direct reports</li>
 					<li>Progressed to manager position after starting as stagehand</li>
 				</ul>
+			</div>
 		</div> <!-- end work experience section -->
+
 <!-- ----- Education Section ----- -->
 		<div class="section" id="education">
 			<h2>education</h2>
 			<p>Elmhurst College<br />
 			Bachelor of Science, Music Business</p>
 		</div> <!-- end eductation section -->
+
 <!-- ----- Interests & Community Section ----- -->
 		<div class="section" id="interests">
 			<h2>interests & community</h2>
@@ -176,10 +185,11 @@
 				<p>&copy; 2019 Richard Sandrok<span class="job-date"><button onclick="printFunc()">Print this page</button><a href="mailto:richard@sandrok.com?Subject=Website%20Contact">Email Me</a></span></p>
 		</footer>
 	</div> <!-- end of .grid-container -->
+
+	<script>
+		function printFunc() {
+			window.print()
+		}
+	</script>
 </body>
-<script>
-function printFunc() {
-	window.print()
-}
-</script>
 </html>

@@ -72,12 +72,17 @@ h3 {
     text-transform: uppercase;
 }
 
-.contact {
+h4 {
+    font-size: inherit;
+    font-weight: normal;
+}
+
+#contact-info {
     grid-column: 1 / 4;
     text-align: center;
 }   
 
-.contact ul li {
+#contact-info ul li {
     display: inline;
     margin: 0px 12px;
     font-size: small;
@@ -139,7 +144,7 @@ footer {
     height: 50px;
     background: rgb(137, 130, 148);
     color: white;
-    padding: 0 20px;
+    padding: 7px 10px 10px 10px;
     border-left: 6px solid rgb(78, 42, 132);
     border-right: 6px solid rgb(78, 42, 132);
 }
@@ -177,7 +182,7 @@ button {
         text-shadow: none;
     }
 
-    .contact ul li{
+    #contact-info ul li{
         font-size: small;
     }
 
@@ -290,7 +295,7 @@ button {
         color: rgb(78, 42, 132);
     }
 
-    .contact ul li{
+    #contact-info ul li{
         display: block;
     }
     
