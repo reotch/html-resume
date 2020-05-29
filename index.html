@@ -51,7 +51,7 @@
 			<h3 class="job-sub">technical skills</h3>
 			<div class="split">
 				<p class="left">Programming Languages</p>
-				<p class="right">Python, JavaScript, HTML5, XML, CSS3</p>
+				<p class="right">Python, JavaScript, Node.js, HTML5, XML, CSS3</p>
 				<p class="left">Web Technologies/Frameworks</p>
 				<p class="right">RestAPI, Web Form APIs, Angular, SQL, Flask, Bootstrap UI, NumPy, Pandas, jQuery</p>
 				<p class="left">Databases</p>
@@ -182,7 +182,7 @@
 			</ul>
 		</div> <!-- end interests and community section -->
 		<footer>
-				<p>&copy; 2019 Richard Sandrok<span class="job-date"><button onclick="printFunc()">Print this page</button><a href="mailto:richard@sandrok.com?Subject=Website%20Contact">Email Me</a></span></p>
+				<p>&copy; <span id="current-year"></span> Richard Sandrok<span class="job-date"><button onclick="printFunc()">Print this page</button><a href="mailto:richard@sandrok.com?Subject=Website%20Contact">Email Me</a></span></p>
 		</footer>
 	</div> <!-- end of .grid-container -->
 
@@ -190,6 +190,10 @@
 		function printFunc() {
 			window.print()
 		}
+		let d = new Date();
+		let y = d.getFullYear();
+		let year = document.getElementById('current-year');
+		year.innerHTML = y;
 	</script>
 </body>
 </html>
